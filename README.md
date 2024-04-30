@@ -1,7 +1,3 @@
-Got it! Here's the revised README for your C++ implementation of the Levenshtein distance:
-
----
-
 # Levenshtein Distance Calculator (C++)
 
 ![Levenshtein Distance](https://img.shields.io/badge/Levenshtein-Distance-blue)
@@ -30,7 +26,7 @@ int main() {
     std::string str1 = "kitten";
     std::string str2 = "sitting";
 
-    int distance = calculateDistance(str1, str2);
+    int distance = calculateLevenshteinDistance(str1, str2);
     std::cout << "Levenshtein distance between '" << str1 << "' and '" << str2 << "' is: " << distance << std::endl;
 
     return 0;
@@ -49,7 +45,7 @@ int main() {
     std::string str1 = "kitten";
     std::string str2 = "sitting";
 
-    int distance = calculateDistance(str1, str2);
+    int distance = calculateLevenshteinDistance(str1, str2);
     std::cout << "Levenshtein distance between '" << str1 << "' and '" << str2 << "' is: " << distance << std::endl;
 
     return 0;
@@ -72,7 +68,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to make any adjustments necessary!
