@@ -3,7 +3,7 @@
 #include<math.h>
 #include<algorithm>
 
-int levenshtein(std::string word1, std::string word2){
+int calculateLevenshteinDistance(std::string word1, std::string word2){
     size_t size1 = word1.size();
     size_t size2 = word2.size();
 
@@ -39,16 +39,4 @@ int levenshtein(std::string word1, std::string word2){
 
     delete[] lev;
     return levVal;
-}
-
-int main(){
-    std::string s1 = "rat";
-    std::string s2 = "bat";
-
-    int ans = levenshtein(s1, s2);
-
-    std::cout << ans <<"\n";
-    std::cout << "Program Ran Successfully\n";
-
-    return 0;
 }
