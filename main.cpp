@@ -35,7 +35,8 @@ int main()
         std::cin >> userInput1;
         std::cout << "Enter the second string: ";
         std::cin >> userInput2;
-        std::cout << "Levenshtein distannce between " << userInput1 << " and " << userInput2 << " is " << calculateLevenshteinDistance(userInput1, userInput2) << ".";
+        int distance = calculateLevenshteinDistance(userInput1, userInput2);
+        std::cout << "Levenshtein distannce between " << userInput1 << " and " << userInput2 << " is " << distance << ".";
         break;
     }
     case 2:
@@ -111,7 +112,7 @@ int main()
     std::cout << "Do you wish to continue? \n1. Yes \n2. No \n";
     std::cin >> willContinue;
     std::cout << "\n";
-    } while(willContinue == 1 && choice != 4);
+    } while(willContinue == 1);
 
     std::cout << "Thank you for playting.\n";
 
