@@ -10,17 +10,24 @@ int main()
         "apple",
         "apparently",
         "appears",
-        "appreciate"
+        "appreciate",
+        "fixing",
+        "sitting",
+        "kept",
+        "carry",
+        "merry"
     };
+
     int choice;
     int willContinue;
+    
     do
     {
     std::cout << "Choose a index from the list.\n";
-    std::cout << "1. Compare 2 strings using user input.\n";
+    std::cout << "1. Calculate the Levenshtein distance between 2 strings using user input.\n";
     std::cout << "2. Compare a string with in-built dictionary using default tolerance.\n";
     std::cout << "3. Compare a string with in-built dictionary using custom tolerance.\n";
-    std::cout << "4. Exit\n";
+    std::cout << "4. Exit\n\n";
     std::cout << "Enter a choice: ";
 
     std::cin >> choice;
